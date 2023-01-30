@@ -9,17 +9,17 @@
 <https://w3id.org/wfont> rdf:type owl:Ontology ;
                           owl:imports <https://w3id.org/eep> ;
                           <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
-                          <http://purl.org/dc/terms/contributor> """Francisco Javier Diez <mailto:francisco.diez>
+                          <http://purl.org/dc/terms/contributor> """Francisco Javier Diez <mailto:francisco.diez@tekniker.es>
 Gonzalo Gil <mailto:gonzalo.gil@tekniker.es>
-Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
-                          <http://purl.org/dc/terms/created> "2021-10-05"^^xsd:string ;
-                          <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>"@tekniker.es> ;
+Egoitz Konde <mailto:egoitz.konde@tekniker.es>""" ;
+                          <http://purl.org/dc/terms/created> "2021-10-05" ;
+                          <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>" ;
                           <http://purl.org/dc/terms/description> "The Wind Farm Ontology (wfont) describes wind farms and their components. It is inspired by the SANDIA Report SAND2009-1171 and DAEKIN project outcomes. It reuses the AffectedBy and EEP (Execution-Executor-Procedure) ontology design patterns to discover sensors or actuators that observe or act on a given quality or feature of interest."@en ;
-                          <http://purl.org/dc/terms/modified> "2021-11-04"^^xsd:string ;
-                          <http://purl.org/dc/terms/title> "Wind Farm Ontology (wfont)"^^xsd:string ;
-                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "wfont"^^xsd:string ;
+                          <http://purl.org/dc/terms/modified> "2021-11-04" ;
+                          <http://purl.org/dc/terms/title> "Wind Farm Ontology (wfont)" ;
+                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "wfont" ;
                           <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
-                          owl:versionInfo "0.2"@tekniker.es> .
+                          owl:versionInfo "0.2"@es .
 
 #################################################################
 #    Annotation properties
@@ -102,7 +102,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                    rdfs:comment "Indicates the warning and alarm level for having abrasive particles in the oil, it is calculated using Cutting parameter of the sensor."@en ;
                    rdfs:isDefinedBy : ;
                    rdfs:label "Abrasive Wear Level"@en ;
-                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#AdhesiveWearLevel
@@ -111,7 +111,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                    rdfs:comment "Indicates the warning and alarm level for having sliding particles in the oil, it is calculated using Sliding parameter of the sensor."@en ;
                    rdfs:isDefinedBy : ;
                    rdfs:label "Adhesive Wear Level"@en ;
-                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#AirContentLevel
@@ -120,7 +120,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                  rdfs:comment "Indicates the warning and alarm level for having bubbles in the oil, it is calculated using Bubbles parameter of the sensor."@en ;
                  rdfs:isDefinedBy : ;
                  rdfs:label "Air Content Level"@en ;
-                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#BigBubbles
@@ -129,7 +129,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
             rdfs:comment "Number of bubbles per milimiter bigger than 21 μm."@en ;
             rdfs:isDefinedBy : ;
             rdfs:label "Big Bubbles"@en ;
-            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#BigParticles
@@ -138,7 +138,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
               rdfs:comment "Number of particles per milimiter bigger than 21 μm."@en ;
               rdfs:isDefinedBy : ;
               rdfs:label "Big Particles"@en ;
-              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Bubbles
@@ -147,7 +147,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
          rdfs:comment "Number of bubbles per milimiter."@en ;
          rdfs:isDefinedBy : ;
          rdfs:label "Bubbles"@en ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Bushing
@@ -157,8 +157,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
          rdfs:isDefinedBy : ;
          rdfs:label "Buje"@es ,
                     "Bushing"@en ;
-         rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+         rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#CarrierBearing
@@ -168,8 +168,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                 rdfs:isDefinedBy : ;
                 rdfs:label "Carrier Bearing"@en ,
                            "Rodamiento Portador"@es ;
-                rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#CleanlinessLevel
@@ -178,7 +178,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                   rdfs:comment "Indicates the warning and alarm level for having particles in the oil, it is calculated using ISO4, ISO6 and ISO14 parameter of the sensor."@en ;
                   rdfs:isDefinedBy : ;
                   rdfs:label "Cleanliness Level"@en ;
-                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#CoolantPump
@@ -188,8 +188,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
              rdfs:isDefinedBy : ;
              rdfs:label "Bomba de Refrigerante"@es ,
                         "Coolant Pump"@en ;
-             rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+             rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#CoolingSystem
@@ -199,8 +199,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                rdfs:isDefinedBy : ;
                rdfs:label "Cooling System"@en ,
                           "Sistema de Refrigeración"@es ;
-               rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+               rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Cutting
@@ -209,7 +209,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
          rdfs:comment "Number of particles related to cutting wear per milimiter."@en ;
          rdfs:isDefinedBy : ;
          rdfs:label "Cutting"@en ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Fatigue
@@ -218,7 +218,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
          rdfs:comment "Number of particles related to fatigue wear per milimiter."@en ;
          rdfs:isDefinedBy : ;
          rdfs:label "Fatigue"@en ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#FatigueWearLevel
@@ -227,7 +227,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                   rdfs:comment "Indicates the warning and alarm level for having fatigue particles in the oil, it is calculated using Fatigue parameter of the sensor."@en ;
                   rdfs:isDefinedBy : ;
                   rdfs:label "Fatigue Wear Level"@en ;
-                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Fiber
@@ -236,7 +236,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
        rdfs:comment "Number of particles related to fiber particles per milimiter."@en ;
        rdfs:isDefinedBy : ;
        rdfs:label "Fiber"@en ;
-       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#FibreContaminationLevel
@@ -245,7 +245,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                          rdfs:comment "Indicates the warning and alarm level for having fibre particles in the oil, it is calculated using Fibre parameter of the sensor."@en ;
                          rdfs:isDefinedBy : ;
                          rdfs:label "Fibre Contamination Level"@en ;
-                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Gearbox
@@ -281,8 +281,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
          rdfs:isDefinedBy : ;
          rdfs:label "Gearbox"@en ,
                     "Multiplicadora"@es ;
-         rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+         rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#GearboxBearing
@@ -292,8 +292,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                 rdfs:isDefinedBy : ;
                 rdfs:label "Bearing"@en ,
                            "Rodamiento"@es ;
-                rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#GearboxComponent
@@ -302,7 +302,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                   rdfs:isDefinedBy : ;
                   rdfs:label "Componente de Multiplicadora"@es ,
                              "Gearbox Component"@en ;
-                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#GearboxGears
@@ -312,8 +312,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
               rdfs:isDefinedBy : ;
               rdfs:label "Engranaje"@es ,
                          "Gears"@en ;
-              rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+              rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#GearboxHousing
@@ -323,8 +323,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                 rdfs:isDefinedBy : ;
                 rdfs:label "Alojamiento"@es ,
                            "Housing"@en ;
-                rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#GearboxLubeSystem
@@ -334,8 +334,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                    rdfs:isDefinedBy : ;
                    rdfs:label "Lube System"@en ,
                               "Sistema de Lubricación"@es ;
-                   rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                   rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#GearboxTorqueArmSystem
@@ -345,8 +345,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                         rdfs:isDefinedBy : ;
                         rdfs:label "Sistema de Brazo de Torque"@es ,
                                    "Torque Arm System"@en ;
-                        rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                        rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#HollowShaft
@@ -356,8 +356,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
              rdfs:isDefinedBy : ;
              rdfs:label "Eje hueco"@es ,
                         "Hollow Shaft"@en ;
-             rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+             rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Hose-Fitting
@@ -367,8 +367,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
               rdfs:isDefinedBy : ;
               rdfs:label "Hose/Fitting"@en ,
                          "Manguera"@es ;
-              rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+              rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#ISO14
@@ -377,7 +377,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
        rdfs:comment "Number of particles per milimiter bigger than 14 μm. Related to ISO 4406:1999 method for coding the level of contamination by solid particles."@en ;
        rdfs:isDefinedBy : ;
        rdfs:label "ISO14"@en ;
-       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#ISO4
@@ -386,7 +386,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
       rdfs:comment "Number of particles per milimiter bigger than 4 μm. Related to ISO 4406:1999 method for coding the level of contamination by solid particles."@en ;
       rdfs:isDefinedBy : ;
       rdfs:label "ISO4"@en ;
-      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#ISO6
@@ -395,7 +395,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
       rdfs:comment "Number of particles per milimiter bigger than 6 μm. Related to ISO 4406:1999 method for coding the level of contamination by solid particles."@en ;
       rdfs:isDefinedBy : ;
       rdfs:label "ISO6"@en ;
-      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Indicator
@@ -404,7 +404,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
            rdfs:isDefinedBy : ;
            rdfs:label "Indicador"@es ,
                       "Indicator"@en ;
-           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#LubePump
@@ -414,8 +414,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
           rdfs:isDefinedBy : ;
           rdfs:label "Bomba de Lubricación"@es ,
                      "Lube Pump"@en ;
-          rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+          rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#LubePumpMotor
@@ -425,8 +425,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                rdfs:isDefinedBy : ;
                rdfs:label "Lube Pump Motor"@en ,
                           "Motor de Bomba de Lubricación"@es ;
-               rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+               rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Nacelle
@@ -439,8 +439,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
          rdfs:isDefinedBy : ;
          rdfs:label "Góndola"@es ,
                     "Nacelle"@en ;
-         rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+         rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#OilDegradation
@@ -449,7 +449,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                 rdfs:comment "State of the oil degradation level in the different stages of its useful life."@en ;
                 rdfs:isDefinedBy : ;
                 rdfs:label "Oil Degradation"@en ;
-                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#OilDegradationLevel
@@ -458,7 +458,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                      rdfs:comment "Indicates the warning and alarm level for oil degradation in the oil, it is calculated using OD parameter of the sensor."@en ;
                      rdfs:isDefinedBy : ;
                      rdfs:label "Oil Degradation Level"@en ;
-                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Particles
@@ -467,7 +467,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
            rdfs:comment "Number of particles per milimiter."@en ;
            rdfs:isDefinedBy : ;
            rdfs:label "Particles"@en ;
-           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#PlanetBearing
@@ -477,8 +477,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                rdfs:isDefinedBy : ;
                rdfs:label "Planet Bearing"@en ,
                           "Rodamiento Planetario"@es ;
-               rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+               rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#PlanetGear
@@ -488,8 +488,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
             rdfs:isDefinedBy : ;
             rdfs:label "Engranaje Planetario"@es ,
                        "Planet Gear"@en ;
-            rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+            rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#PrimaryFiltration
@@ -499,8 +499,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                    rdfs:isDefinedBy : ;
                    rdfs:label "Filtración Primaria"@es ,
                               "Primary Filtration"@en ;
-                   rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                   rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Radiator
@@ -510,8 +510,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
           rdfs:isDefinedBy : ;
           rdfs:label "Radiador"@es ,
                      "Radiator"@en ;
-          rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+          rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Reservoir
@@ -521,8 +521,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
            rdfs:isDefinedBy : ;
            rdfs:label "Depósito"@es ,
                       "Reservoir"@en ;
-           rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+           rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#RingGear
@@ -532,8 +532,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
           rdfs:isDefinedBy : ;
           rdfs:label "Engranaje de Anillo"@es ,
                      "Ring Gear"@en ;
-          rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+          rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#SecondaryFiltration
@@ -543,8 +543,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                      rdfs:isDefinedBy : ;
                      rdfs:label "Filtración Secundaria"@es ,
                                 "Secondary Filtration"@en ;
-                     rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                     rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Sensor
@@ -559,8 +559,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
         rdfs:isDefinedBy : ;
         rdfs:label "Sensor"@en ,
                    "Sensor"@es ;
-        rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+        rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#SevereWearLevel
@@ -569,7 +569,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                  rdfs:comment "Indicates the warning and alarm level for having big particles in the oil, it is calculated using BigParticles parameter of the sensor."@en ;
                  rdfs:isDefinedBy : ;
                  rdfs:label "Severe Wear Level"@en ;
-                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#ShaftBearing
@@ -579,8 +579,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
               rdfs:isDefinedBy : ;
               rdfs:label "Rodamiento de Eje"@es ,
                          "Shaft Bearing"@en ;
-              rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+              rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Sliding
@@ -589,7 +589,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
          rdfs:comment "Number of particles related to slidding wear per milimiter."@en ;
          rdfs:isDefinedBy : ;
          rdfs:label "Sliding"@en ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#SpurGear
@@ -599,8 +599,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
           rdfs:isDefinedBy : ;
           rdfs:label "Engranaje Recto"@es ,
                      "Spur Gear"@en ;
-          rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+          rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#SunGear
@@ -610,8 +610,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
          rdfs:isDefinedBy : ;
          rdfs:label "Engranaje Solar"@es ,
                     "Sun Gear"@en ;
-         rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+         rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#UnclassifiedWearLevel
@@ -620,7 +620,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
                        rdfs:comment "Indicates the warning and alarm level for having unclassified particles in the oil, it is calculated using Unknown parameter of the sensor."@en ;
                        rdfs:isDefinedBy : ;
                        rdfs:label "Unclassified Wear Level"@en ;
-                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#Unknown
@@ -629,7 +629,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
          rdfs:comment "Number of particles related to unknown particles per milimiter."@en ;
          rdfs:isDefinedBy : ;
          rdfs:label "Unknown"@en ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#WindFarm
@@ -642,8 +642,8 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
           rdfs:isDefinedBy : ;
           rdfs:label "Parque Eólico"@es ,
                      "Wind Farm"@en ;
-          rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy"^^xsd:string ;
-          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+          rdfs:seeAlso "SAND2009-1171 Report - Appendix A: Taxonomy" ;
+          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 ###  https://w3id.org/wfont#WindTurbine
@@ -656,7 +656,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
              rdfs:isDefinedBy : ;
              rdfs:label "Aerogenerador"@es ,
                         "Wind Turbine"@en ;
-             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string .
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 
 
 #################################################################
@@ -667,4 +667,4 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>"""@tekniker.es> ;
 : rdf:type owl:NamedIndividual .
 
 
-###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

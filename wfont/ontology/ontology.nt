@@ -1,15 +1,15 @@
 <https://w3id.org/wfont> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/wfont> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eep> .
 <https://w3id.org/wfont> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/wfont> <http://purl.org/dc/terms/contributor> "Francisco Javier Diez <mailto:francisco.diez>\nGonzalo Gil <mailto:gonzalo.gil@tekniker.es>\nEgoitz Konde <mailto:egoitz.konde@tekniker.es>"@tekniker.es> .
+<https://w3id.org/wfont> <http://purl.org/dc/terms/contributor> "Francisco Javier Diez <mailto:francisco.diez@tekniker.es>\nGonzalo Gil <mailto:gonzalo.gil@tekniker.es>\nEgoitz Konde <mailto:egoitz.konde@tekniker.es>" .
 <https://w3id.org/wfont> <http://purl.org/dc/terms/created> "2021-10-05" .
-<https://w3id.org/wfont> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>"@tekniker.es> .
+<https://w3id.org/wfont> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>" .
 <https://w3id.org/wfont> <http://purl.org/dc/terms/description> "The Wind Farm Ontology (wfont) describes wind farms and their components. It is inspired by the SANDIA Report SAND2009-1171 and DAEKIN project outcomes. It reuses the AffectedBy and EEP (Execution-Executor-Procedure) ontology design patterns to discover sensors or actuators that observe or act on a given quality or feature of interest."@en .
 <https://w3id.org/wfont> <http://purl.org/dc/terms/modified> "2021-11-04" .
 <https://w3id.org/wfont> <http://purl.org/dc/terms/title> "Wind Farm Ontology (wfont)" .
 <https://w3id.org/wfont> <http://purl.org/vocab/vann/preferredNamespacePrefix> "wfont" .
 <https://w3id.org/wfont> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/wfont#> .
-<https://w3id.org/wfont> <http://www.w3.org/2002/07/owl#versionInfo> "0.2"@tekniker.es> .
+<https://w3id.org/wfont> <http://www.w3.org/2002/07/owl#versionInfo> "0.2"@es .
 # 
 # 
 # #################################################################
@@ -113,7 +113,7 @@
 # https://w3id.org/wfont#BigBubbles
 <https://w3id.org/wfont#BigBubbles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/wfont#BigBubbles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wfont#Bubbles> .
-<https://w3id.org/wfont#BigBubbles> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of bubbles per milimiter bigger than 21 \u03BCm."@en .
+<https://w3id.org/wfont#BigBubbles> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of bubbles per milimiter bigger than 21 μm."@en .
 <https://w3id.org/wfont#BigBubbles> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
 <https://w3id.org/wfont#BigBubbles> <http://www.w3.org/2000/01/rdf-schema#label> "Big Bubbles"@en .
 <https://w3id.org/wfont#BigBubbles> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -121,7 +121,7 @@
 # https://w3id.org/wfont#BigParticles
 <https://w3id.org/wfont#BigParticles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/wfont#BigParticles> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wfont#Particles> .
-<https://w3id.org/wfont#BigParticles> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of particles per milimiter bigger than 21 \u03BCm."@en .
+<https://w3id.org/wfont#BigParticles> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of particles per milimiter bigger than 21 μm."@en .
 <https://w3id.org/wfont#BigParticles> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
 <https://w3id.org/wfont#BigParticles> <http://www.w3.org/2000/01/rdf-schema#label> "Big Particles"@en .
 <https://w3id.org/wfont#BigParticles> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -178,7 +178,7 @@
 <https://w3id.org/wfont#CoolingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Reduces the temperature of the oil from the lubricating system."@en .
 <https://w3id.org/wfont#CoolingSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
 <https://w3id.org/wfont#CoolingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Cooling System"@en .
-<https://w3id.org/wfont#CoolingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema de Refrigeraci\u00F3n"@es .
+<https://w3id.org/wfont#CoolingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema de Refrigeración"@es .
 <https://w3id.org/wfont#CoolingSystem> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "SAND2009-1171 Report - Appendix A: Taxonomy" .
 <https://w3id.org/wfont#CoolingSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -299,17 +299,17 @@ _:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/wfont#Gearbox
 # https://w3id.org/wfont#GearboxLubeSystem
 <https://w3id.org/wfont#GearboxLubeSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/wfont#GearboxLubeSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wfont#GearboxComponent> .
-<https://w3id.org/wfont#GearboxLubeSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "It controls the shifting process of the transmission, lubrication of the transmission parts to prevent frictional damage, and cooling of the transmission.\u00A0"@en .
+<https://w3id.org/wfont#GearboxLubeSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "It controls the shifting process of the transmission, lubrication of the transmission parts to prevent frictional damage, and cooling of the transmission. "@en .
 <https://w3id.org/wfont#GearboxLubeSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
 <https://w3id.org/wfont#GearboxLubeSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Lube System"@en .
-<https://w3id.org/wfont#GearboxLubeSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema de Lubricaci\u00F3n"@es .
+<https://w3id.org/wfont#GearboxLubeSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema de Lubricación"@es .
 <https://w3id.org/wfont#GearboxLubeSystem> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "SAND2009-1171 Report - Appendix A: Taxonomy" .
 <https://w3id.org/wfont#GearboxLubeSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
 # https://w3id.org/wfont#GearboxTorqueArmSystem
 <https://w3id.org/wfont#GearboxTorqueArmSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/wfont#GearboxTorqueArmSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wfont#GearboxComponent> .
-<https://w3id.org/wfont#GearboxTorqueArmSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "It is\u00A0a long suspension arm that attaches between the housing and the Nacelle. Its primary job is to control axle housing rotation."@en .
+<https://w3id.org/wfont#GearboxTorqueArmSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a long suspension arm that attaches between the housing and the Nacelle. Its primary job is to control axle housing rotation."@en .
 <https://w3id.org/wfont#GearboxTorqueArmSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
 <https://w3id.org/wfont#GearboxTorqueArmSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Sistema de Brazo de Torque"@es .
 <https://w3id.org/wfont#GearboxTorqueArmSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Torque Arm System"@en .
@@ -339,7 +339,7 @@ _:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/wfont#Gearbox
 # https://w3id.org/wfont#ISO14
 <https://w3id.org/wfont#ISO14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/wfont#ISO14> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/affectedBy#Quality> .
-<https://w3id.org/wfont#ISO14> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of particles per milimiter bigger than 14 \u03BCm. Related to ISO 4406:1999 method for coding the level of contamination by solid particles."@en .
+<https://w3id.org/wfont#ISO14> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of particles per milimiter bigger than 14 μm. Related to ISO 4406:1999 method for coding the level of contamination by solid particles."@en .
 <https://w3id.org/wfont#ISO14> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
 <https://w3id.org/wfont#ISO14> <http://www.w3.org/2000/01/rdf-schema#label> "ISO14"@en .
 <https://w3id.org/wfont#ISO14> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -347,7 +347,7 @@ _:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/wfont#Gearbox
 # https://w3id.org/wfont#ISO4
 <https://w3id.org/wfont#ISO4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/wfont#ISO4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/affectedBy#Quality> .
-<https://w3id.org/wfont#ISO4> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of particles per milimiter bigger than 4 \u03BCm. Related to ISO 4406:1999 method for coding the level of contamination by solid particles."@en .
+<https://w3id.org/wfont#ISO4> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of particles per milimiter bigger than 4 μm. Related to ISO 4406:1999 method for coding the level of contamination by solid particles."@en .
 <https://w3id.org/wfont#ISO4> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
 <https://w3id.org/wfont#ISO4> <http://www.w3.org/2000/01/rdf-schema#label> "ISO4"@en .
 <https://w3id.org/wfont#ISO4> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -355,7 +355,7 @@ _:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/wfont#Gearbox
 # https://w3id.org/wfont#ISO6
 <https://w3id.org/wfont#ISO6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/wfont#ISO6> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/affectedBy#Quality> .
-<https://w3id.org/wfont#ISO6> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of particles per milimiter bigger than 6 \u03BCm. Related to ISO 4406:1999 method for coding the level of contamination by solid particles."@en .
+<https://w3id.org/wfont#ISO6> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of particles per milimiter bigger than 6 μm. Related to ISO 4406:1999 method for coding the level of contamination by solid particles."@en .
 <https://w3id.org/wfont#ISO6> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
 <https://w3id.org/wfont#ISO6> <http://www.w3.org/2000/01/rdf-schema#label> "ISO6"@en .
 <https://w3id.org/wfont#ISO6> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -373,7 +373,7 @@ _:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/wfont#Gearbox
 <https://w3id.org/wfont#LubePump> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wfont#GearboxLubeSystem> .
 <https://w3id.org/wfont#LubePump> <http://www.w3.org/2000/01/rdf-schema#comment> "Circulates the lubricant from the lube system."@en .
 <https://w3id.org/wfont#LubePump> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
-<https://w3id.org/wfont#LubePump> <http://www.w3.org/2000/01/rdf-schema#label> "Bomba de Lubricaci\u00F3n"@es .
+<https://w3id.org/wfont#LubePump> <http://www.w3.org/2000/01/rdf-schema#label> "Bomba de Lubricación"@es .
 <https://w3id.org/wfont#LubePump> <http://www.w3.org/2000/01/rdf-schema#label> "Lube Pump"@en .
 <https://w3id.org/wfont#LubePump> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "SAND2009-1171 Report - Appendix A: Taxonomy" .
 <https://w3id.org/wfont#LubePump> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -384,7 +384,7 @@ _:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/wfont#Gearbox
 <https://w3id.org/wfont#LubePumpMotor> <http://www.w3.org/2000/01/rdf-schema#comment> "It supplies motive power to the pump."@en .
 <https://w3id.org/wfont#LubePumpMotor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
 <https://w3id.org/wfont#LubePumpMotor> <http://www.w3.org/2000/01/rdf-schema#label> "Lube Pump Motor"@en .
-<https://w3id.org/wfont#LubePumpMotor> <http://www.w3.org/2000/01/rdf-schema#label> "Motor de Bomba de Lubricaci\u00F3n"@es .
+<https://w3id.org/wfont#LubePumpMotor> <http://www.w3.org/2000/01/rdf-schema#label> "Motor de Bomba de Lubricación"@es .
 <https://w3id.org/wfont#LubePumpMotor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "SAND2009-1171 Report - Appendix A: Taxonomy" .
 <https://w3id.org/wfont#LubePumpMotor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
@@ -394,9 +394,9 @@ _:genid6 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/wfont#Gearbox
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wfont#hasPart> .
 _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wfont#Gearbox> .
-<https://w3id.org/wfont#Nacelle> <http://www.w3.org/2000/01/rdf-schema#comment> "A housing which contains the drive\u2011train and other elements on top of a horizontal axis wind turbine tower."@en .
+<https://w3id.org/wfont#Nacelle> <http://www.w3.org/2000/01/rdf-schema#comment> "A housing which contains the drive‑train and other elements on top of a horizontal axis wind turbine tower."@en .
 <https://w3id.org/wfont#Nacelle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
-<https://w3id.org/wfont#Nacelle> <http://www.w3.org/2000/01/rdf-schema#label> "G\u00F3ndola"@es .
+<https://w3id.org/wfont#Nacelle> <http://www.w3.org/2000/01/rdf-schema#label> "Góndola"@es .
 <https://w3id.org/wfont#Nacelle> <http://www.w3.org/2000/01/rdf-schema#label> "Nacelle"@en .
 <https://w3id.org/wfont#Nacelle> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "SAND2009-1171 Report - Appendix A: Taxonomy" .
 <https://w3id.org/wfont#Nacelle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -450,7 +450,7 @@ _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wfont#
 <https://w3id.org/wfont#PrimaryFiltration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wfont#GearboxLubeSystem> .
 <https://w3id.org/wfont#PrimaryFiltration> <http://www.w3.org/2000/01/rdf-schema#comment> "First step of lube filtration system."@en .
 <https://w3id.org/wfont#PrimaryFiltration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
-<https://w3id.org/wfont#PrimaryFiltration> <http://www.w3.org/2000/01/rdf-schema#label> "Filtraci\u00F3n Primaria"@es .
+<https://w3id.org/wfont#PrimaryFiltration> <http://www.w3.org/2000/01/rdf-schema#label> "Filtración Primaria"@es .
 <https://w3id.org/wfont#PrimaryFiltration> <http://www.w3.org/2000/01/rdf-schema#label> "Primary Filtration"@en .
 <https://w3id.org/wfont#PrimaryFiltration> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "SAND2009-1171 Report - Appendix A: Taxonomy" .
 <https://w3id.org/wfont#PrimaryFiltration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -470,7 +470,7 @@ _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wfont#
 <https://w3id.org/wfont#Reservoir> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wfont#GearboxLubeSystem> .
 <https://w3id.org/wfont#Reservoir> <http://www.w3.org/2000/01/rdf-schema#comment> "Lube compartment or tank that collect oil."@en .
 <https://w3id.org/wfont#Reservoir> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
-<https://w3id.org/wfont#Reservoir> <http://www.w3.org/2000/01/rdf-schema#label> "Dep\u00F3sito"@es .
+<https://w3id.org/wfont#Reservoir> <http://www.w3.org/2000/01/rdf-schema#label> "Depósito"@es .
 <https://w3id.org/wfont#Reservoir> <http://www.w3.org/2000/01/rdf-schema#label> "Reservoir"@en .
 <https://w3id.org/wfont#Reservoir> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "SAND2009-1171 Report - Appendix A: Taxonomy" .
 <https://w3id.org/wfont#Reservoir> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -490,7 +490,7 @@ _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wfont#
 <https://w3id.org/wfont#SecondaryFiltration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/wfont#GearboxLubeSystem> .
 <https://w3id.org/wfont#SecondaryFiltration> <http://www.w3.org/2000/01/rdf-schema#comment> "Second step of lube filtration system."@en .
 <https://w3id.org/wfont#SecondaryFiltration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
-<https://w3id.org/wfont#SecondaryFiltration> <http://www.w3.org/2000/01/rdf-schema#label> "Filtraci\u00F3n Secundaria"@es .
+<https://w3id.org/wfont#SecondaryFiltration> <http://www.w3.org/2000/01/rdf-schema#label> "Filtración Secundaria"@es .
 <https://w3id.org/wfont#SecondaryFiltration> <http://www.w3.org/2000/01/rdf-schema#label> "Secondary Filtration"@en .
 <https://w3id.org/wfont#SecondaryFiltration> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "SAND2009-1171 Report - Appendix A: Taxonomy" .
 <https://w3id.org/wfont#SecondaryFiltration> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -580,7 +580,7 @@ _:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/wfont#hasP
 _:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wfont#WindTurbine> .
 <https://w3id.org/wfont#WindFarm> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of wind turbine generator jointly operated."@en .
 <https://w3id.org/wfont#WindFarm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
-<https://w3id.org/wfont#WindFarm> <http://www.w3.org/2000/01/rdf-schema#label> "Parque E\u00F3lico"@es .
+<https://w3id.org/wfont#WindFarm> <http://www.w3.org/2000/01/rdf-schema#label> "Parque Eólico"@es .
 <https://w3id.org/wfont#WindFarm> <http://www.w3.org/2000/01/rdf-schema#label> "Wind Farm"@en .
 <https://w3id.org/wfont#WindFarm> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "SAND2009-1171 Report - Appendix A: Taxonomy" .
 <https://w3id.org/wfont#WindFarm> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
@@ -609,4 +609,4 @@ _:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/wfont
 # https://w3id.org/wfont#
 <https://w3id.org/wfont#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
