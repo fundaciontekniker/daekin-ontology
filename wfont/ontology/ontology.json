@@ -143,7 +143,11 @@
     "@id" : "https://creativecommons.org/licenses/by-nc/4.0/"
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
-    "@value" : "Francisco Javier Diez <mailto:francisco.diez@tekniker.es>\nGonzalo Gil <mailto:gonzalo.gil@tekniker.es>\nEgoitz Konde <mailto:egoitz.konde@tekniker.es>"
+    "@value" : "Egoitz Konde <mailto:egoitz.konde@tekniker.es>"
+  }, {
+    "@value" : "Francisco Javier Diez <mailto:francisco.diez@tekniker.es>"
+  }, {
+    "@value" : "Gonzalo Gil <mailto:gonzalo.gil@tekniker.es>"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@value" : "2021-10-05"
@@ -1399,6 +1403,9 @@
 }, {
   "@id" : "https://w3id.org/wfont#hasIndicator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relation that links a Gearbox to the indicators that describe its situation."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/wfont#"
   } ],
@@ -1415,6 +1422,9 @@
 }, {
   "@id" : "https://w3id.org/wfont#hasPart",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relation that links an element and the parts is composed of."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/wfont#"
   } ],

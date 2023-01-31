@@ -1,7 +1,9 @@
 <https://w3id.org/wfont> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/wfont> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eep> .
 <https://w3id.org/wfont> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/wfont> <http://purl.org/dc/terms/contributor> "Francisco Javier Diez <mailto:francisco.diez@tekniker.es>\nGonzalo Gil <mailto:gonzalo.gil@tekniker.es>\nEgoitz Konde <mailto:egoitz.konde@tekniker.es>" .
+<https://w3id.org/wfont> <http://purl.org/dc/terms/contributor> "Egoitz Konde <mailto:egoitz.konde@tekniker.es>" .
+<https://w3id.org/wfont> <http://purl.org/dc/terms/contributor> "Francisco Javier Diez <mailto:francisco.diez@tekniker.es>" .
+<https://w3id.org/wfont> <http://purl.org/dc/terms/contributor> "Gonzalo Gil <mailto:gonzalo.gil@tekniker.es>" .
 <https://w3id.org/wfont> <http://purl.org/dc/terms/created> "2021-10-05" .
 <https://w3id.org/wfont> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>" .
 <https://w3id.org/wfont> <http://purl.org/dc/terms/description> "The Wind Farm Ontology (wfont) describes wind farms and their components. It is inspired by the SANDIA Report SAND2009-1171 and DAEKIN project outcomes. It reuses the AffectedBy and EEP (Execution-Executor-Procedure) ontology design patterns to discover sensors or actuators that observe or act on a given quality or feature of interest."@en .
@@ -61,12 +63,14 @@
 # https://w3id.org/wfont#hasIndicator
 <https://w3id.org/wfont#hasIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/wfont#hasIndicator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/wfont#Indicator> .
+<https://w3id.org/wfont#hasIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation that links a Gearbox to the indicators that describe its situation." .
 <https://w3id.org/wfont#hasIndicator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
 <https://w3id.org/wfont#hasIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "hasIndicator"@en .
 <https://w3id.org/wfont#hasIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "tieneIndicador"@es .
 # 
 # https://w3id.org/wfont#hasPart
 <https://w3id.org/wfont#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/wfont#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation that links an element and the parts is composed of." .
 <https://w3id.org/wfont#hasPart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/wfont#> .
 <https://w3id.org/wfont#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "hasPart"@en .
 <https://w3id.org/wfont#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "tieneParte"@es .

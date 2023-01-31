@@ -9,9 +9,9 @@
 <https://w3id.org/wfont> rdf:type owl:Ontology ;
                           owl:imports <https://w3id.org/eep> ;
                           <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
-                          <http://purl.org/dc/terms/contributor> """Francisco Javier Diez <mailto:francisco.diez@tekniker.es>
-Gonzalo Gil <mailto:gonzalo.gil@tekniker.es>
-Egoitz Konde <mailto:egoitz.konde@tekniker.es>""" ;
+                          <http://purl.org/dc/terms/contributor> "Egoitz Konde <mailto:egoitz.konde@tekniker.es>" ,
+                                                                 "Francisco Javier Diez <mailto:francisco.diez@tekniker.es>" ,
+                                                                 "Gonzalo Gil <mailto:gonzalo.gil@tekniker.es>" ;
                           <http://purl.org/dc/terms/created> "2021-10-05" ;
                           <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>" ;
                           <http://purl.org/dc/terms/description> "The Wind Farm Ontology (wfont) describes wind farms and their components. It is inspired by the SANDIA Report SAND2009-1171 and DAEKIN project outcomes. It reuses the AffectedBy and EEP (Execution-Executor-Procedure) ontology design patterns to discover sensors or actuators that observe or act on a given quality or feature of interest."@en ;
@@ -72,6 +72,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>""" ;
 ###  https://w3id.org/wfont#hasIndicator
 :hasIndicator rdf:type owl:ObjectProperty ;
               rdfs:range :Indicator ;
+              rdfs:comment "Relation that links a Gearbox to the indicators that describe its situation." ;
               rdfs:isDefinedBy : ;
               rdfs:label "hasIndicator"@en ,
                          "tieneIndicador"@es .
@@ -79,6 +80,7 @@ Egoitz Konde <mailto:egoitz.konde@tekniker.es>""" ;
 
 ###  https://w3id.org/wfont#hasPart
 :hasPart rdf:type owl:ObjectProperty ;
+         rdfs:comment "Relation that links an element and the parts is composed of." ;
          rdfs:isDefinedBy : ;
          rdfs:label "hasPart"@en ,
                     "tieneParte"@es .

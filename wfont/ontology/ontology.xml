@@ -14,9 +14,9 @@
     <owl:Ontology rdf:about="https://w3id.org/wfont">
         <owl:imports rdf:resource="https://w3id.org/eep"/>
         <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:contributor>Francisco Javier Diez &lt;mailto:francisco.diez@tekniker.es&gt;
-Gonzalo Gil &lt;mailto:gonzalo.gil@tekniker.es&gt;
-Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
+        <terms:contributor>Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
+        <terms:contributor>Francisco Javier Diez &lt;mailto:francisco.diez@tekniker.es&gt;</terms:contributor>
+        <terms:contributor>Gonzalo Gil &lt;mailto:gonzalo.gil@tekniker.es&gt;</terms:contributor>
         <terms:created>2021-10-05</terms:created>
         <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;</terms:creator>
         <terms:description xml:lang="en">The Wind Farm Ontology (wfont) describes wind farms and their components. It is inspired by the SANDIA Report SAND2009-1171 and DAEKIN project outcomes. It reuses the AffectedBy and EEP (Execution-Executor-Procedure) ontology design patterns to discover sensors or actuators that observe or act on a given quality or feature of interest.</terms:description>
@@ -128,6 +128,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/wfont#hasIndicator">
         <rdfs:range rdf:resource="https://w3id.org/wfont#Indicator"/>
+        <rdfs:comment>Relation that links a Gearbox to the indicators that describe its situation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">hasIndicator</rdfs:label>
         <rdfs:label xml:lang="es">tieneIndicador</rdfs:label>
@@ -139,6 +140,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/wfont#hasPart">
+        <rdfs:comment>Relation that links an element and the parts is composed of.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">hasPart</rdfs:label>
         <rdfs:label xml:lang="es">tieneParte</rdfs:label>

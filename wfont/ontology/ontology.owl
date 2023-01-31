@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/wfont#"
      xml:base="https://w3id.org/wfont"
-     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:ns1="http://creativecommons.org/ns#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -13,16 +13,16 @@
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="https://w3id.org/wfont">
         <owl:imports rdf:resource="https://w3id.org/eep"/>
-        <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:contributor>Francisco Javier Diez &lt;mailto:francisco.diez@tekniker.es&gt;
-Gonzalo Gil &lt;mailto:gonzalo.gil@tekniker.es&gt;
-Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
-        <terms:created>2021-10-05</terms:created>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <terms:contributor>Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
+        <terms:contributor>Francisco Javier Diez &lt;mailto:francisco.diez@tekniker.es&gt;</terms:contributor>
+        <terms:contributor>Gonzalo Gil &lt;mailto:gonzalo.gil@tekniker.es&gt;</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-05</terms:created>
         <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;</terms:creator>
         <terms:description xml:lang="en">The Wind Farm Ontology (wfont) describes wind farms and their components. It is inspired by the SANDIA Report SAND2009-1171 and DAEKIN project outcomes. It reuses the AffectedBy and EEP (Execution-Executor-Procedure) ontology design patterns to discover sensors or actuators that observe or act on a given quality or feature of interest.</terms:description>
-        <terms:modified>2021-11-04</terms:modified>
-        <terms:title>Wind Farm Ontology (wfont)</terms:title>
-        <vann:preferredNamespacePrefix>wfont</vann:preferredNamespacePrefix>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-04</terms:modified>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wind Farm Ontology (wfont)</terms:title>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wfont</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/wfont#"/>
         <owl:versionInfo xml:lang="es">0.2</owl:versionInfo>
     </owl:Ontology>
@@ -115,6 +115,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/wfont#hasIndicator">
         <rdfs:range rdf:resource="https://w3id.org/wfont#Indicator"/>
+        <rdfs:comment>Relation that links a Gearbox to the indicators that describe its situation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">hasIndicator</rdfs:label>
         <rdfs:label xml:lang="es">tieneIndicador</rdfs:label>
@@ -125,6 +126,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
     <!-- https://w3id.org/wfont#hasPart -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/wfont#hasPart">
+        <rdfs:comment>Relation that links an element and the parts is composed of.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">hasPart</rdfs:label>
         <rdfs:label xml:lang="es">tieneParte</rdfs:label>
@@ -162,7 +164,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Indicates the warning and alarm level for having abrasive particles in the oil, it is calculated using Cutting parameter of the sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Abrasive Wear Level</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -174,7 +176,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Indicates the warning and alarm level for having sliding particles in the oil, it is calculated using Sliding parameter of the sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Adhesive Wear Level</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -186,7 +188,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Indicates the warning and alarm level for having bubbles in the oil, it is calculated using Bubbles parameter of the sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Air Content Level</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -198,7 +200,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Number of bubbles per milimiter bigger than 21 μm.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Big Bubbles</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -210,7 +212,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Number of particles per milimiter bigger than 21 μm.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Big Particles</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -222,7 +224,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Number of bubbles per milimiter.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Bubbles</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -235,8 +237,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Buje</rdfs:label>
         <rdfs:label xml:lang="en">Bushing</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -249,8 +251,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Carrier Bearing</rdfs:label>
         <rdfs:label xml:lang="es">Rodamiento Portador</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -262,7 +264,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Indicates the warning and alarm level for having particles in the oil, it is calculated using ISO4, ISO6 and ISO14 parameter of the sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Cleanliness Level</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -275,8 +277,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Bomba de Refrigerante</rdfs:label>
         <rdfs:label xml:lang="en">Coolant Pump</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -289,8 +291,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Cooling System</rdfs:label>
         <rdfs:label xml:lang="es">Sistema de Refrigeración</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -302,7 +304,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Number of particles related to cutting wear per milimiter.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Cutting</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -314,7 +316,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Number of particles related to fatigue wear per milimiter.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Fatigue</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -326,7 +328,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Indicates the warning and alarm level for having fatigue particles in the oil, it is calculated using Fatigue parameter of the sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Fatigue Wear Level</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -338,7 +340,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Number of particles related to fiber particles per milimiter.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Fiber</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -350,7 +352,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Indicates the warning and alarm level for having fibre particles in the oil, it is calculated using Fibre parameter of the sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Fibre Contamination Level</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -401,8 +403,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Gearbox</rdfs:label>
         <rdfs:label xml:lang="es">Multiplicadora</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -415,8 +417,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Bearing</rdfs:label>
         <rdfs:label xml:lang="es">Rodamiento</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -428,7 +430,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Componente de Multiplicadora</rdfs:label>
         <rdfs:label xml:lang="en">Gearbox Component</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -441,8 +443,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Engranaje</rdfs:label>
         <rdfs:label xml:lang="en">Gears</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -455,8 +457,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Alojamiento</rdfs:label>
         <rdfs:label xml:lang="en">Housing</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -469,8 +471,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Lube System</rdfs:label>
         <rdfs:label xml:lang="es">Sistema de Lubricación</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -483,8 +485,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Sistema de Brazo de Torque</rdfs:label>
         <rdfs:label xml:lang="en">Torque Arm System</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -497,8 +499,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Eje hueco</rdfs:label>
         <rdfs:label xml:lang="en">Hollow Shaft</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -511,8 +513,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Hose/Fitting</rdfs:label>
         <rdfs:label xml:lang="es">Manguera</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -524,7 +526,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Number of particles per milimiter bigger than 14 μm. Related to ISO 4406:1999 method for coding the level of contamination by solid particles.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">ISO14</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -536,7 +538,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Number of particles per milimiter bigger than 4 μm. Related to ISO 4406:1999 method for coding the level of contamination by solid particles.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">ISO4</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -548,7 +550,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Number of particles per milimiter bigger than 6 μm. Related to ISO 4406:1999 method for coding the level of contamination by solid particles.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">ISO6</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -560,7 +562,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Indicador</rdfs:label>
         <rdfs:label xml:lang="en">Indicator</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -573,8 +575,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Bomba de Lubricación</rdfs:label>
         <rdfs:label xml:lang="en">Lube Pump</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -587,8 +589,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Lube Pump Motor</rdfs:label>
         <rdfs:label xml:lang="es">Motor de Bomba de Lubricación</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -606,8 +608,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Góndola</rdfs:label>
         <rdfs:label xml:lang="en">Nacelle</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -619,7 +621,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">State of the oil degradation level in the different stages of its useful life.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Oil Degradation</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -631,7 +633,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Indicates the warning and alarm level for oil degradation in the oil, it is calculated using OD parameter of the sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Oil Degradation Level</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -643,7 +645,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Number of particles per milimiter.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Particles</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -656,8 +658,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Planet Bearing</rdfs:label>
         <rdfs:label xml:lang="es">Rodamiento Planetario</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -670,8 +672,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Engranaje Planetario</rdfs:label>
         <rdfs:label xml:lang="en">Planet Gear</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -684,8 +686,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Filtración Primaria</rdfs:label>
         <rdfs:label xml:lang="en">Primary Filtration</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -698,8 +700,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Radiador</rdfs:label>
         <rdfs:label xml:lang="en">Radiator</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -712,8 +714,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Depósito</rdfs:label>
         <rdfs:label xml:lang="en">Reservoir</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -726,8 +728,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Engranaje de Anillo</rdfs:label>
         <rdfs:label xml:lang="en">Ring Gear</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -740,8 +742,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Filtración Secundaria</rdfs:label>
         <rdfs:label xml:lang="en">Secondary Filtration</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -761,8 +763,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Sensor</rdfs:label>
         <rdfs:label xml:lang="es">Sensor</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -774,7 +776,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Indicates the warning and alarm level for having big particles in the oil, it is calculated using BigParticles parameter of the sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Severe Wear Level</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -787,8 +789,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Rodamiento de Eje</rdfs:label>
         <rdfs:label xml:lang="en">Shaft Bearing</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -800,7 +802,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Number of particles related to slidding wear per milimiter.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Sliding</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -813,8 +815,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Engranaje Recto</rdfs:label>
         <rdfs:label xml:lang="en">Spur Gear</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -827,8 +829,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Engranaje Solar</rdfs:label>
         <rdfs:label xml:lang="en">Sun Gear</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -840,7 +842,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Indicates the warning and alarm level for having unclassified particles in the oil, it is calculated using Unknown parameter of the sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Unclassified Wear Level</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -852,7 +854,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:comment xml:lang="en">Number of particles related to unknown particles per milimiter.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="en">Unknown</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -870,8 +872,8 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Parque Eólico</rdfs:label>
         <rdfs:label xml:lang="en">Wind Farm</rdfs:label>
-        <rdfs:seeAlso>SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
-        <ns:term_status>stable</ns:term_status>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAND2009-1171 Report - Appendix A: Taxonomy</rdfs:seeAlso>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
@@ -889,7 +891,7 @@ Egoitz Konde &lt;mailto:egoitz.konde@tekniker.es&gt;</terms:contributor>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/wfont#"/>
         <rdfs:label xml:lang="es">Aerogenerador</rdfs:label>
         <rdfs:label xml:lang="en">Wind Turbine</rdfs:label>
-        <ns:term_status>stable</ns:term_status>
+        <ns1:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns1:term_status>
     </owl:Class>
     
 
